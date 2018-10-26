@@ -5,9 +5,22 @@ const StyledTitle = styled.h1`
   color: ${props => props.theme.blue};
 `;
 
+const StyledPara = styled.p`
+  font-family: "AvenirNext-Regular";
+  font-size: 1.5rem;
+`;
+
 class Landing extends Component {
   render() {
-    return <StyledTitle>Hello World</StyledTitle>;
+    return (
+      <div>
+        <StyledTitle>Hello World</StyledTitle>
+        <StyledPara>
+          Helojdflsjflsdjfldsj jdsalfjdlsaj fdlsjfsldajf lsdfjlds jflsdjf
+          dsljflsda jflsadjflsajfd
+        </StyledPara>
+      </div>
+    );
   }
 }
 

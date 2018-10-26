@@ -28371,7 +28371,7 @@ exports.GlobalStyles = void 0;
 
 var _styledComponents = require("styled-components");
 
-var _templateObject = _taggedTemplateLiteral(["\n  html {\n    box-sizing: border-box;\n    font-size: 16px;\n  }\n  \n  *, *:before, *:after {\n    box-sizing: inherit;\n  }\n\n  body {\n    margin: 0;\n    padding: 0;\n  }\n"], ["\n  html {\n    box-sizing: border-box;\n    font-size: 16px;\n  }\n  \n  *, *:before, *:after {\n    box-sizing: inherit;\n  }\n\n  body {\n    margin: 0;\n    padding: 0;\n  }\n"]);
+var _templateObject = _taggedTemplateLiteral(["\n    @font-face{\n        font-family:\"AvenirNextLTW01-Medium\";\n        src:url(\"../../assets/Fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix\");\n        src:url(\"../../assets/Fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix\") format(\"eot\"),url(\"../../assets/Fonts/627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2\") format(\"woff2\"),url(\"../../assets/Fonts/f26faddb-86cc-4477-a253-1e1287684336.woff\") format(\"woff\"),url(\"../../assets/Fonts/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf\") format(\"truetype\");\n    }\n    @font-face{\n        font-family:\"Avenir Next LT W01 Bold\";\n        src:url(\"../../assets/Fonts/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix\");\n        src:url(\"../../assets/Fonts/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix\") format(\"eot\"),url(\"../../assets/Fonts/14c73713-e4df-4dba-933b-057feeac8dd1.woff2\") format(\"woff2\"),url(\"../../assets/Fonts/b8e906a1-f5e8-4bf1-8e80-82c646ca4d5f.woff\") format(\"woff\"),url(\"../../assets/Fonts/890bd988-5306-43ff-bd4b-922bc5ebdeb4.ttf\") format(\"truetype\");\n    }\n\n  html {\n    box-sizing: border-box;\n    font-size: 16px;\n  }\n  \n  *, *:before, *:after {\n    box-sizing: inherit;\n  }\n\n  body {\n    margin: 0;\n    padding: 0;\n    font-family: 'AvenirNext-Medium';\n  }\n"], ["\n    @font-face{\n        font-family:\"AvenirNextLTW01-Medium\";\n        src:url(\"../../assets/Fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix\");\n        src:url(\"../../assets/Fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix\") format(\"eot\"),url(\"../../assets/Fonts/627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2\") format(\"woff2\"),url(\"../../assets/Fonts/f26faddb-86cc-4477-a253-1e1287684336.woff\") format(\"woff\"),url(\"../../assets/Fonts/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf\") format(\"truetype\");\n    }\n    @font-face{\n        font-family:\"Avenir Next LT W01 Bold\";\n        src:url(\"../../assets/Fonts/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix\");\n        src:url(\"../../assets/Fonts/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix\") format(\"eot\"),url(\"../../assets/Fonts/14c73713-e4df-4dba-933b-057feeac8dd1.woff2\") format(\"woff2\"),url(\"../../assets/Fonts/b8e906a1-f5e8-4bf1-8e80-82c646ca4d5f.woff\") format(\"woff\"),url(\"../../assets/Fonts/890bd988-5306-43ff-bd4b-922bc5ebdeb4.ttf\") format(\"truetype\");\n    }\n\n  html {\n    box-sizing: border-box;\n    font-size: 16px;\n  }\n  \n  *, *:before, *:after {\n    box-sizing: inherit;\n  }\n\n  body {\n    margin: 0;\n    padding: 0;\n    font-family: 'AvenirNext-Medium';\n  }\n"]);
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
@@ -28410,7 +28410,8 @@ var _jsxFileName = "/Users/gregory/Documents/GitHub/hs-try-two/frontend/src/cont
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _templateObject = _taggedTemplateLiteral(["\n  color: ", ";\n"], ["\n  color: ", ";\n"]);
+var _templateObject = _taggedTemplateLiteral(["\n  color: ", ";\n"], ["\n  color: ", ";\n"]),
+    _templateObject2 = _taggedTemplateLiteral(["\n  font-family: \"AvenirNext-Regular\";\n  font-size: 1.5rem;\n"], ["\n  font-family: \"AvenirNext-Regular\";\n  font-size: 1.5rem;\n"]);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28430,6 +28431,8 @@ var StyledTitle = _styledComponents.default.h1(_templateObject, function (props)
   return props.theme.blue;
 });
 
+var StyledPara = _styledComponents.default.p(_templateObject2);
+
 var Landing = function (_Component) {
   _inherits(Landing, _Component);
 
@@ -28442,13 +28445,25 @@ var Landing = function (_Component) {
   _createClass(Landing, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement(StyledTitle, {
+      return _react.default.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 16
         },
         __self: this
-      }, "Hello World");
+      }, _react.default.createElement(StyledTitle, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, "Hello World"), _react.default.createElement(StyledPara, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
+      }, "Helojdflsjflsdjfldsj jdsalfjdlsaj fdlsjfsldajf lsdfjlds jflsdjf dsljflsda jflsadjflsajfd"));
     }
   }]);
 
@@ -28653,7 +28668,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58518" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52634" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
